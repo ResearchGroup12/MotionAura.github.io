@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="MotionAura: Generating High Quality and Motion Consistent Videos using Discrete Diffusion.">
+  <meta name="keywords" content="MotionAura, Discrete Diffusion, High Quality Video, Motion Consistency">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MotionAura: Generating High Quality and Motion Consistent Videos using Discrete Diffusion</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXX"></script> <!-- Replace with your Google Analytics ID -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet"> <!-- Font link -->
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./static/css/bulma.min.css"> <!-- Path to Bulma CSS file -->
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css"> <!-- Path to FontAwesome CSS file -->
+  <link rel="stylesheet" href="./static/css/index.css"> <!-- Path to your custom CSS file -->
+
+  <!-- Favicon -->
+  <link rel="icon" href="./static/images/output.png"> <!-- Path to your favicon -->
+
+  <style>
+    .buttons {
+      display: flex;
+      justify-content: center; /* Center the buttons */
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .button {
+      background-color: #d3d3d3; /* Light gray background for consistency */
+      color: black; /* Black text */
+      border: none;
+      padding: 10px 20px;
+      font: inherit; /* Inherit the main font style */
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .content {
+      text-align: justify; /* Justify the abstract text */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+<!-- Hero Section with Title -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1">MotionAura: Generating High Quality and Motion Consistent Videos using Discrete Diffusion</h1>
+          <div class="buttons">
+            <button class="button" onclick="window.location.href='blank.html';">Text-To-Video</button>
+            <button class="button" onclick="window.location.href='blank.html';">Sketch-based Inpainting</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Abstract Section -->
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-12">
+        <h2 class="title is-3">Abstract</h2>
+        <p class="content">
+          The spatio-temporal complexity of video data presents significant challenges in tasks such as compression, generation, and inpainting. To tackle these, we propose novel method ("MotionAura"). We propose four novel methodologies to address the challenges of spatiotemporal video processing. First, we introduce the 3D Mobile Inverted Vector-Quantization Variational Autoencoder (3D-MBQ-VAE), which combines Variational Autoencoders (VAEs) with masked modeling to enhance spatiotemporal video compression. By employing a novel training strategy with full frame masking, the model achieves superior temporal consistency and state-of-the-art (SOTA) reconstruction quality. Second, we present MotionAura, a text-to-video generation framework that utilizes vector-quantized diffusion models to discretize the latent space and capture complex motion dynamics, producing temporally coherent videos aligned with text prompts. Third, we propose a spectral transformer-based denoising network that processes video data in the frequency domain using the Fourier Transform. This method effectively captures global context and long-range dependencies, reducing computational complexity while maintaining high-quality video generation and denoising. Lastly, we introduce Sketch Guided Video Inpainting, which leverages Low-Rank Adaptation (LoRA) for parameter-efficient fine-tuning, enabling user-guided inpainting based on sketches. Across various benchmarks, our models achieve or surpass SOTA performance, offering robust frameworks for spatiotemporal modeling and user-driven video content manipulation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+        <span class="motionaura">MotionAura</span> generates high quality, motion-consistent videos using discrete diffusion techniques.
+      </h2>
+      <div class="column has-text-centered">
+        <video id="teaser-video" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/collage.mp4" type="video/mp4"> <!-- Path to the teaser video file -->
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <p>This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

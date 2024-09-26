@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="MotionAura: Generating High Quality and Motion Consistent Videos using Discrete Diffusion.">
+  <meta name="keywords" content="MotionAura, Discrete Diffusion, High Quality Video, Motion Consistency">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MotionAura: Generating High Quality and Motion Consistent Videos using Discrete Diffusion</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXX"></script> <!-- Replace with your Google Analytics ID -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet"> <!-- Font link -->
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./static/css/bulma.min.css"> <!-- Path to Bulma CSS file -->
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css"> <!-- Path to FontAwesome CSS file -->
+  <link rel="stylesheet" href="./static/css/index.css"> <!-- Path to your custom CSS file -->
+
+  <!-- Favicon -->
+  <link rel="icon" href="./static/images/favicon.svg"> <!-- Path to your favicon -->
+
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+<!-- Hero Section with Title and Links -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1">MotionAura: Generating High Quality and Motion Consistent Videos using Discrete Diffusion</h1>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- arXiv Link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/example" class="external-link button is-normal is-rounded is-dark"> <!-- Replace with your arXiv link -->
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- GitHub Link -->
+              <span class="link-block">
+                <a href="https://github.com/example/motionaura" class="external-link button is-normal is-rounded is-dark"> <!-- Replace with your GitHub repository link -->
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+        <span class="motionaura">MotionAura</span> generates high quality, motion-consistent videos using discrete diffusion techniques.
+      </h2>
+      <!-- Single Video -->
+      <div class="column has-text-centered">
+        <video id="teaser-video" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/collage.mp4" type="video/mp4"> <!-- Path to the teaser video file -->
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://arxiv.org/abs/example"> <!-- Link to your arXiv page -->
+        <i class="ai ai-arxiv"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/example/motionaura"> <!-- Link to your GitHub repository -->
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
